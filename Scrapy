@@ -1,0 +1,31 @@
+Em
+# Scrapy
+
+O Scrapy, como a maioria dos pacotes do Python, está no PyPI (também conhecido como pip). PyPI, o Índice de Pacotes Regulamentares de todo o software Python publicado
+Em
+Se você tem uma instalação do Python como a descrita no pré-requisito para este tutorial, você já tem o pip instalado em sua máquina, assim você pode instalar o Scrapy com o seguinte comando:
+
+pip install scrapy
+ 
+Se você tiver problemas com a instalação, ou se quiser instalar o Scrapy sem usar o pip, confira os documentos oficiais de instalação.
+
+Com o Scrapy instalado, vamos criar uma nova pasta para o nosso projeto. Você pode fazer isso no terminal executando:
+
+mkdir brickset-scraper
+ 
+Agora, navegue até o novo diretório que você acabou de criar:
+
+cd brickset-scraper
+ 
+Em seguida, crie um novo arquivo Python para o nosso scraper chamado scraper.py. Colocaremos todo o nosso código neste arquivo para este tutorial. Você pode criar este arquivo no terminal com o comando touch, assim:
+
+touch scraper.py
+ 
+Ou você pode criar o arquivo usando o editor de texto ou o gerenciador gráfico de arquivos.
+
+Vamos começar fazendo um scraper muito básico que usa o Scrapy como base. Para fazer isso, criaremos uma classe Python que é uma subclasse de scrapy.Spider, uma classe básica de spider fornecida pelo Scrapy. Esta classe terá dois atributos obrigatórios:
+
+name - apenas um nome para o spider.
+start_urls - uma lista de URLs a partir da qual você começa a fazer crawling. Começaremos com uma URL.
+Abra o arquivo scrapy.py em seu editor de texto e adicione este código para criar o spider básico:
+
